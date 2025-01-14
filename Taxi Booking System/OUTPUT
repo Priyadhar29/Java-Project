@@ -1,0 +1,67 @@
+Enter number of taxis: 3
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 1
+Enter Pickup Point (A-F): A
+Enter Drop Point (A-F): C
+Enter Pickup Time (in hours): 11
+Taxi-1 is allocated.
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 1
+Enter Pickup Point (A-F): A
+Enter Drop Point (A-F): E
+Enter Pickup Time (in hours): 12
+Taxi-2 is allocated.
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 1
+Enter Pickup Point (A-F): A
+Enter Drop Point (A-F): D
+Enter Pickup Time (in hours): 15
+Taxi-3 is allocated.
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 1
+Enter Pickup Point (A-F): A
+Enter Drop Point (A-F): E
+Enter Pickup Time (in hours): 10
+Booking rejected. No taxis available.
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 1
+Enter Pickup Point (A-F): D
+Enter Drop Point (A-F): E
+Enter Pickup Time (in hours): 16
+Taxi-1 is allocated.
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 2
+Taxi-1 Total Earnings: Rs.550
+BookingID  CustomerID From  To    PickupTime   DropTime  Amount
+1          1          A     C     11           13        350
+2          6          D     E     16           17        200
+Taxi-2 Total Earnings: Rs.650
+BookingID  CustomerID From  To    PickupTime   DropTime  Amount
+1          2          A     E     12           16        650
+Taxi-3 Total Earnings: Rs.500
+BookingID  CustomerID From  To    PickupTime   DropTime  Amount
+1          3          A     D     15           18        500
+
+1. Book Taxi
+2. Display Taxi Details
+3. Exit
+Enter your choice: 3
+Exiting...
