@@ -1,26 +1,28 @@
 import java.util.*;
-class Taxi{
+class Taxi {
     int id;
-    char currentplatform ='A';
-    int earning = 0;
-    List <Booking> booking = new ArrayList<>();
-    public Taxi(int id){
-        this.id=id;
+    char currentPoint = 'A'; // Initially all taxis start at point A
+    int totalEarnings = 0;
+    List<Booking> bookings = new ArrayList<>();
+
+    public Taxi(int id) {
+        this.id = id;
     }
-    public boolean isavailable(int requesttime){
-        if(booking.isEmpty()){
-            return true;
-        }
-        Booking lastBooking = booking.get(booking.size()-1);
-        return lastBooking.droptime <= requesttime;
+
+    public boolean isAvailable(int requestTime) {
+        if (bookings.isEmpty()) return true;
+        Booking lastBooking = bookings.get(bookings.size() - 1);
+        return lastBooking.dropTime <= requestTime;
     }
-    public int calculateearning(char from, char to){
-        int distance =Math.abs(to-from)*15;
-        return 100+ Math.max(0,(distance -5)*10);
+
+    public int calculateEarnings(char from, char to) {
+        int distance = Math.abs(to - from) * 15;
+        return 100 + Math.max(0, (distance - 5) * 10);
     }
-    public void addbooking(Booking bk){
-        booking.add(bk);
-        earning += bk.amount;
-        currentplatform = bk.to;
+
+    public void addBooking(Booking booking) {
+        bookings.add(booking);
+        totalEarnings += booking.amount;
+        currentPoint = booking.to;
     }
 }
